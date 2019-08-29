@@ -4,6 +4,6 @@
 
 ## Loyalty & Rewards
 
-* [Base Schema](https://developer.zaius.com)
+* [Base Schema](https://docs.developers.zaius.com/core-concepts/use-cases/loyalty-and-rewards)
 * [Yotpo](loyalty-and-rewards/yotpo.md)
 
