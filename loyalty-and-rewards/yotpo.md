@@ -165,11 +165,3 @@ To learn more about Customers in Zaius, refer to the following:
 | `tier_lost` | x |
 | `enrolled` | x |
 
-### Custom Events
-
-#### Event Type: `yotpo`
-
-| Event Action | Fields |
-| :--- | :--- |
-| `redemption` | \`\` |
-
