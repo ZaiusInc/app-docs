@@ -66,7 +66,6 @@ To learn more about Customers in Zaius, refer to the following:
 | `yotpo_third_party_id` | string | Third party ID, if any, for this customer provided to your eCommerce Yotpo integration |
 | `yotpo_pos_account_id` | string | POS account ID, if any, for this customer provided to your eCommerce Yotpo integration |
 | `yotpo_has_store_account` | boolean | True if this customer is associated with a store account through Yotpo |
-| `yotpo_subscribed` | boolean | True if this customer is subscribed through Yotpo |
 | `yotpo_source` | string | Where the customer came from, if referred |
 | `yotpo_expiration_job_id` | string | Expiration job ID within Yotpo |
 | `yotpo_perks_redeemed` | number | Number of perks redeemed through Yotpo |
@@ -165,3 +164,51 @@ To learn more about Customers in Zaius, refer to the following:
 | `tier_lost` | x |
 | `enrolled` | x |
 
+### App Events 
+
+#### Event Type: `loyalty`
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Event Action</th>
+      <th style="text-align:left">Fields</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>yotpo_coupon_awarded</code>
+      </td>
+      <td style="text-align:left">
+        <p><code>yotpo_redemption_id</code>
+        </p>
+        <p><code>yotpo_redemption_option_id</code>
+        </p>
+        <p><code>yotpo_perk_id</code>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>yotpo_coupon_redeemed</code>
+      </td>
+      <td style="text-align:left">
+        <p><code>yotpo_redemption_id</code>
+        </p>
+        <p><code>yotpo_redemption_option_id</code>
+        </p>
+        <p><del><code>yotpo_perk_id</code></del>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>yotpo_coupon_reminder</code>
+      </td>
+      <td style="text-align:left">
+        <p><code>yotpo_redemption_option_id</code>
+        </p>
+        <p><code>yotpo_points_needed</code>
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
