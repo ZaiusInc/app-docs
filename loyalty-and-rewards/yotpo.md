@@ -31,7 +31,13 @@ Once you click "Save" updates to customers will happen as they occur, in real-ti
 Yotpo Swell does not support historical import at this time.
 {% endhint %}
 
+
+
 ## Objects & Fields
+
+{% hint style="success" %}
+The Yotpo Swell app imports all data in the Loyalty & Rewards base schema AND the objects and fields below.
+{% endhint %}
 
 ### Objects
 
