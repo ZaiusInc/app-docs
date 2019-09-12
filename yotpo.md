@@ -1,14 +1,27 @@
+---
+description: >-
+  Integrate with Yotpo Swell and import loyalty points, loyalty tiers,
+  redemptions (loyalty reward coupons), referral codes and more!
+---
+
 # Yotpo
 
+![](.gitbook/assets/1810c695-7567-44bc-b07f-abce45da9f29.png)
+
 {% hint style="warning" %}
-The Zaius Yotpo app does not import ratings and reviews at this time.
+The Zaius Yotpo app **does not** import Ratings and Reviews at this time.
 {% endhint %}
 
-The Yotpo Swell app receives loyalty, referral, and redemption data from Swell and maps it to your customers and creates new customers within Zaius as appropriate. While historical data is not imported, data is imported in real-time once connected.
+## Why install Yotpo for Zaius?
 
-![](../.gitbook/assets/1810c695-7567-44bc-b07f-abce45da9f29.png)
+* To track the Loyalty Point balances of your customers.
+* To send campaigns to customers
 
-## Setup
+## Requirements
+
+
+
+## Setup & Installation
 
 In Zaius:
 
@@ -19,7 +32,7 @@ In Zaius:
 
 In Yotpo Swell:
 
-![](../.gitbook/assets/swell_rewards.png)
+![](.gitbook/assets/swell_rewards.png)
 
 1. Click **Settings**
 2. **Paste the URL** from Zaius \(step 4 above\)
@@ -31,15 +44,75 @@ Once you click "Save" updates to customers will happen as they occur, in real-ti
 Yotpo Swell does not support historical import at this time.
 {% endhint %}
 
+## Data Overview
 
+### Events
 
-## Objects & Fields
+#### Standard Events
 
-{% hint style="success" %}
-The Yotpo Swell app imports all data in the Loyalty & Rewards base schema AND the objects and fields below.
-{% endhint %}
+#### Event Type: `loyalty`
 
-### Objects
+| Event Action | Used by Yotpo |
+| :--- | :--- |
+| `points_added` | x |
+| `points_removed` | x |
+| `referral_completed` | x |
+| `referral_link_shared` | x |
+| `tier_earned` | x |
+| `tier_lost` | x |
+
+#### App Events 
+
+#### Event Type: `loyalty`
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Event Action</th>
+      <th style="text-align:left">Fields</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>yotpo_coupon_awarded</code>
+      </td>
+      <td style="text-align:left">
+        <p><code>yotpo_redemption_id</code>
+        </p>
+        <p><code>yotpo_redemption_option_id</code>
+        </p>
+        <p><code>yotpo_perk_id</code>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>yotpo_coupon_redeemed</code>
+      </td>
+      <td style="text-align:left">
+        <p><code>yotpo_redemption_id</code>
+        </p>
+        <p><code>yotpo_redemption_option_id</code>
+        </p>
+        <p><del><code>yotpo_perk_id</code></del>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>yotpo_coupon_reminder</code>
+      </td>
+      <td style="text-align:left">
+        <p><code>yotpo_redemption_option_id</code>
+        </p>
+        <p><code>yotpo_points_needed</code>
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>### Objects & Fields
+
+The Yotpo Swell app imports all data in the Loyalty & Rewards base schema **IN ADDITION TO** the objects and fields below.
+
+#### Objects
 
 | Object Name | Description |
 | :--- | :--- |
@@ -47,7 +120,7 @@ The Yotpo Swell app imports all data in the Loyalty & Rewards base schema AND th
 | Yotpo Redemptions \(`yotpo_redemptions`\) |  |
 | Yotpo Redemption Options \(`yotpo_redemption_options`\) |  |
 
-### Fields
+#### Fields
 
 #### Events \(events\)
 
@@ -145,7 +218,7 @@ To learn more about Customers in Zaius, refer to the following:
 | `cost_text` | string | Cost to redeem, formatted for display to a customer |
 | `amount` | number | Number of points required to redeem for this reward |
 
-### Relationships
+#### Relationships
 
 | Name | Parent | Child |
 | :--- | :--- | :--- |
@@ -154,67 +227,3 @@ To learn more about Customers in Zaius, refer to the following:
 | `yotpo_perk` | `events` | `yotpo_perks` |
 | `yotpo_redemption_option` | `yotpo_perks` | `yotpo_redemption_options` |
 
-## Events
-
-### Standard Events
-
-#### Event Type: `loyalty`
-
-| Event Action | Used by Yotpo |
-| :--- | :--- |
-| `points_added` | x |
-| `points_removed` | x |
-| `referral_completed` | x |
-| `referral_link_shared` | x |
-| `tier_earned` | x |
-| `tier_lost` | x |
-| `enrolled` | x |
-
-### App Events 
-
-#### Event Type: `loyalty`
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Event Action</th>
-      <th style="text-align:left">Fields</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><code>yotpo_coupon_awarded</code>
-      </td>
-      <td style="text-align:left">
-        <p><code>yotpo_redemption_id</code>
-        </p>
-        <p><code>yotpo_redemption_option_id</code>
-        </p>
-        <p><code>yotpo_perk_id</code>
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>yotpo_coupon_redeemed</code>
-      </td>
-      <td style="text-align:left">
-        <p><code>yotpo_redemption_id</code>
-        </p>
-        <p><code>yotpo_redemption_option_id</code>
-        </p>
-        <p><del><code>yotpo_perk_id</code></del>
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>yotpo_coupon_reminder</code>
-      </td>
-      <td style="text-align:left">
-        <p><code>yotpo_redemption_option_id</code>
-        </p>
-        <p><code>yotpo_points_needed</code>
-        </p>
-      </td>
-    </tr>
-  </tbody>
-</table>

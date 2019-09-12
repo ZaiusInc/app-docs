@@ -1,9 +1,9 @@
 # Table of contents
 
 * [Overview](README.md)
+* [Yotpo](yotpo.md)
 
-## Loyalty & Rewards
+## Objects & Fields <a id="objects-fields"></a>
 
-* [Base Schema](https://docs.developers.zaius.com/core-concepts/use-cases/loyalty-and-rewards)
-* [Yotpo](loyalty-and-rewards/yotpo.md)
+* [Loyalty & Rewards](https://docs.developers.zaius.com/core-concepts/use-cases/loyalty-and-rewards)
 
