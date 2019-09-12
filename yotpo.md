@@ -6,6 +6,14 @@ description: >-
 
 # Yotpo
 
+{% hint style="info" %}
+Yotpo Swell is currently in **BETA**  
+  
+If you are interested in joining the beta, please email [**`betas@zaius.com`**](mailto:betas@zaius.com) with information about your use cases!  
+  
+Wide release is planned for **late October 2019**.
+{% endhint %}
+
 ![](.gitbook/assets/1810c695-7567-44bc-b07f-abce45da9f29.png)
 
 {% hint style="warning" %}
@@ -14,12 +22,11 @@ The Zaius Yotpo app **does not** import Ratings and Reviews at this time.
 
 ## Why install Yotpo for Zaius?
 
-* To track the Loyalty Point balances of your customers.
-* To send campaigns to customers
+* The Loyalty 
 
 ## Requirements
 
-
+* An active paid subscription to Yotpo Loyalty \(aka Swell\)
 
 ## Setup & Installation
 
