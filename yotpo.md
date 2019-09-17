@@ -16,17 +16,28 @@ Wide release is planned for **late October 2019**.
 
 ![](.gitbook/assets/1810c695-7567-44bc-b07f-abce45da9f29.png)
 
-{% hint style="warning" %}
-The Zaius Yotpo app **does not** import Ratings and Reviews at this time.
-{% endhint %}
-
 ## Why install Yotpo for Zaius?
 
-* The Loyalty 
+* Augment customer records with attributes like **Loyalty Points Balance** and **Loyalty Tier**
+* **Create personalized content** that uses the customer's current Loyalty Points Balance or Loyalty Tier
+* Remind your customers to **share their referral link** to earn points 
+* Notify customers that their shared referral link has not be claimed
+* Notify customers that they have **achieved a new Loyalty Tier** and drive them to your website to claim  rewards or that they **have lost a Loyalty Tier** and provide actions to earn the tier back
+* Reward customers with **Birthday offers**
+* Remind customers that they have **unused Loyalty Points that are expiring soon**
 
-## Requirements
+...and much, much more!
 
-* An active paid subscription to Yotpo Loyalty \(aka Swell\)
+## Requirements / Limitations
+
+* An active paid subscription to Yotpo Loyalty \(also known as _Swell_ or _Yotpo Swell_\) is required
+* The Zaius Yotpo app **does not import Ratings and Reviews** at this time.
+* The Zaius Yotpo app **does not import historical data from Yotpo**, data is collected on a go-forward basis.
+* The beta does not support Loyalty Tier, Coupon or Offers in event-triggered campaigns
+
+## Screenshots
+
+
 
 ## Setup & Installation
 
@@ -51,36 +62,49 @@ Once you click "Save" updates to customers will happen as they occur, in real-ti
 Yotpo Swell does not support historical import at this time.
 {% endhint %}
 
+## Included Recipes
+
+| Recipe Name |
+| :--- |
+| Yotpo: Loyalty Referral Completed |
+| Yotpo: Loyalty Points Expire Soon |
+| Yotpo: Loyalty Coupon Reminder |
+| Yotpo: Loyalty Coupon Earned |
+| Yotpo: Loyalty Tier Earned |
+| Yotpo: Loyalty Tier Lost |
+| Yotpo: Loyalty Points Available Reminder |
+| Yotpo: Loyalty Referral Not Claimed |
+| Yotpo: Loyalty Birthday Coupon |
+
 ## Data Overview
 
 ### Events
 
 #### Standard Events
 
-#### Event Type: `loyalty`
-
-| Event Action | Used by Yotpo |
-| :--- | :--- |
-| `points_added` | x |
-| `points_removed` | x |
-| `referral_completed` | x |
-| `referral_link_shared` | x |
-| `tier_earned` | x |
-| `tier_lost` | x |
+| Event Type | Event Action | Used by Yotpo |
+| :--- | :--- | :--- |
+| `loyalty` | `points_added` | x |
+| `loyalty` | `points_removed` | x |
+| `loyalty` | `referral_completed` | x |
+| `loyalty` | `referral_link_shared` | x |
+| `loyalty` | `tier_earned` | x |
+| `loyalty` | `tier_lost` | x |
 
 #### App Events 
-
-#### Event Type: `loyalty`
 
 <table>
   <thead>
     <tr>
+      <th style="text-align:left">Event Type</th>
       <th style="text-align:left">Event Action</th>
       <th style="text-align:left">Fields</th>
     </tr>
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left"><code>loyalty</code>
+      </td>
       <td style="text-align:left"><code>yotpo_coupon_awarded</code>
       </td>
       <td style="text-align:left">
@@ -93,6 +117,8 @@ Yotpo Swell does not support historical import at this time.
       </td>
     </tr>
     <tr>
+      <td style="text-align:left"><code>loyalty</code>
+      </td>
       <td style="text-align:left"><code>yotpo_coupon_redeemed</code>
       </td>
       <td style="text-align:left">
@@ -105,6 +131,8 @@ Yotpo Swell does not support historical import at this time.
       </td>
     </tr>
     <tr>
+      <td style="text-align:left"><code>loyalty</code>
+      </td>
       <td style="text-align:left"><code>yotpo_coupon_reminder</code>
       </td>
       <td style="text-align:left">
@@ -121,11 +149,11 @@ The Yotpo Swell app imports all data in the Loyalty & Rewards base schema **IN A
 
 #### Objects
 
-| Object Name | Description |
-| :--- | :--- |
-| Yotpo Perks \(`yotpo_perks`\) |  |
-| Yotpo Redemptions \(`yotpo_redemptions`\) |  |
-| Yotpo Redemption Options \(`yotpo_redemption_options`\) |  |
+| Object Name |
+| :--- |
+| Yotpo Perks \(`yotpo_perks`\) |
+| Yotpo Redemptions \(`yotpo_redemptions`\) |
+| Yotpo Redemption Options \(`yotpo_redemption_options`\) |
 
 #### Fields
 
