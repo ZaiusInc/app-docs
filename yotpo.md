@@ -21,7 +21,7 @@ Wide release is planned for **late October 2019**.
 * Augment customer records with attributes like **Loyalty Points Balance** and **Loyalty Tier**
 * **Create personalized content** that uses the customer's current Loyalty Points Balance or Loyalty Tier
 * Remind your customers to **share their referral link** to earn points 
-* Notify customers that their shared referral link has not be claimed
+* Notify customers that their **shared referral link has not been claimed**
 * Notify customers that they have **achieved a new Loyalty Tier** and drive them to your website to claim  rewards or that they **have lost a Loyalty Tier** and provide actions to earn the tier back
 * Reward customers with **Birthday offers**
 * Remind customers that they have **unused Loyalty Points that are expiring soon**
@@ -30,14 +30,20 @@ Wide release is planned for **late October 2019**.
 
 ## Requirements / Limitations
 
-* An active paid subscription to Yotpo Loyalty \(also known as _Swell_ or _Yotpo Swell_\) is required
+* **An active paid subscription to Yotpo Loyalty** \(also known as _Swell_ or _Yotpo Swell_\) is required
 * The Zaius Yotpo app **does not import Ratings and Reviews** at this time.
 * The Zaius Yotpo app **does not import historical data from Yotpo**, data is collected on a go-forward basis.
-* The beta does not support Loyalty Tier, Coupon or Offers in event-triggered campaigns
+* The beta **does not support Loyalty Tier, Coupon or Offers in event-triggered campaigns**
 
 ## Screenshots
 
+### Example Campaign
 
+![Example of a Yotpo Loyalty Segment](.gitbook/assets/screen-shot-2019-09-17-at-2.35.22-pm.png)
+
+### Example Content
+
+![Example of a campaign using Loyalty data](.gitbook/assets/screen-shot-2019-09-17-at-2.36.53-pm.png)
 
 ## Setup & Installation
 
