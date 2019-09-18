@@ -148,6 +148,20 @@ Yotpo Swell does not support historical import at this time.
         </p>
       </td>
     </tr>
+    <tr>
+      <td style="text-align:left"><code>loyalty</code>
+      </td>
+      <td style="text-align:left"><code>yotpo_birthday_reminder</code>
+      </td>
+      <td style="text-align:left">
+        <p><code>current_loyalty_points_balance</code>
+        </p>
+        <p><code>yotpo_redemption_id</code>
+        </p>
+        <p><code>yotpo_redemption_option_id</code>
+        </p>
+      </td>
+    </tr>
   </tbody>
 </table>### Objects & Fields
 
