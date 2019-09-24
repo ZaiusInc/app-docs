@@ -9,8 +9,6 @@ description: >-
 {% hint style="info" %}
 Yotpo Swell is currently in **BETA**  
   
-If you are interested in joining the beta, please email [**`betas@zaius.com`**](mailto:betas@zaius.com) with information about your use cases!  
-  
 Wide release is planned for **late October 2019**.
 {% endhint %}
 
@@ -30,10 +28,10 @@ Wide release is planned for **late October 2019**.
 
 ## Requirements / Limitations
 
-* **An active paid subscription to Yotpo Loyalty** \(also known as _Swell_ or _Yotpo Swell_\) is required
+* **An active paid subscription to Yotpo Loyalty** \(also known as _Swell_ or _Yotpo Swell_\).
 * The Zaius Yotpo app **does not import Ratings and Reviews** at this time.
 * The Zaius Yotpo app **does not import historical data from Yotpo**, data is collected on a go-forward basis.
-* The beta **does not support Loyalty Tier, Coupon or Offers in event-triggered campaigns**
+* The beta **does not support Loyalty Tier, Coupon or Offers in event-triggered campaigns.**
 
 ## Screenshots
 
@@ -68,7 +66,11 @@ Once you click "Save" updates to customers will happen as they occur, in real-ti
 Yotpo Swell does not support historical import at this time.
 {% endhint %}
 
-## Included Recipes
+## Available Recipes
+
+{% hint style="info" %}
+Gain access to the following recipes by contacting Zaius support.
+{% endhint %}
 
 | Recipe Name |
 | :--- |
