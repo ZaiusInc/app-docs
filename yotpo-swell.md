@@ -4,7 +4,7 @@ description: >-
   redemptions (loyalty reward coupons), referral codes and more!
 ---
 
-# Yotpo
+# Yotpo Swell
 
 {% hint style="info" %}
 Yotpo Swell is currently in **BETA**  
@@ -38,10 +38,6 @@ Wide release is planned for **late October 2019**.
 ### Example Campaign
 
 ![Example of a Yotpo Loyalty Segment](.gitbook/assets/screen-shot-2019-09-17-at-2.35.22-pm.png)
-
-### Example Content
-
-![Example of a campaign using Loyalty data](.gitbook/assets/screen-shot-2019-09-17-at-2.36.53-pm.png)
 
 ## Setup & Installation
 
@@ -127,7 +123,7 @@ Gain access to the following recipes by contacting Zaius support.
     <tr>
       <td style="text-align:left"><code>loyalty</code>
       </td>
-      <td style="text-align:left"><code>yotpo_coupon_redeemed</code>
+      <td style="text-align:left"><code>yotpo_points_redeemed</code>
       </td>
       <td style="text-align:left">
         <p><code>yotpo_redemption_id</code>
@@ -141,7 +137,7 @@ Gain access to the following recipes by contacting Zaius support.
     <tr>
       <td style="text-align:left"><code>loyalty</code>
       </td>
-      <td style="text-align:left"><code>yotpo_coupon_reminder</code>
+      <td style="text-align:left"><code>yotpo_redemption_reminder</code>
       </td>
       <td style="text-align:left">
         <p><code>yotpo_redemption_option_id</code>
