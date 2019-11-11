@@ -6,12 +6,6 @@ description: >-
 
 # Yotpo Swell
 
-{% hint style="info" %}
-Yotpo Swell is currently in **BETA**  
-  
-Wide release is planned for **late October 2019**.
-{% endhint %}
-
 ![](.gitbook/assets/1810c695-7567-44bc-b07f-abce45da9f29.png)
 
 ## Why install Yotpo for Zaius?
